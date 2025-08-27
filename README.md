@@ -25,7 +25,7 @@ Existem duas maneiras de executar este projeto: localmente com Node.js ou via Do
 **Passos:**
 1.  Clone o repositório:
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_AQUI]
+    git clone [https://github.com/marcelogsv/desaparecidos-mt.git](https://github.com/marcelogsv/desaparecidos-mt.git)
     ```
 2.  Navegue até a pasta do projeto:
     ```bash
