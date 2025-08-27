@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Projeto Pessoas Desaparecidas - DESENVOLVE MT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta é uma Single Page Application (SPA) desenvolvida em React e TypeScript como parte do projeto prático para o DESENVOLVE MT. A aplicação consome a API da Polícia Judiciária Civil de Mato Grosso para exibir, buscar e permitir o envio de informações sobre pessoas desaparecidas.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Dados do Candidato
 
-### `npm start`
+* **Nome:** Marcelo Genro Schütz de Vasconcelos
+* **E-mail:** marcelodafter@gmail.com
+* **Celular:** (51) 98310-0073
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Como Executar o Projeto
 
-### `npm test`
+Existem duas maneiras de executar este projeto: localmente com Node.js ou via Docker.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 1. Executando Localmente
 
-### `npm run build`
+**Pré-requisitos:**
+* Node.js (versão 18 ou superior)
+* npm (geralmente vem com o Node.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Passos:**
+1.  Clone o repositório:
+    ```bash
+    git clone [URL_DO_SEU_REPOSITORIO_AQUI]
+    ```
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd desaparecidos-mt
+    ```
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+4.  Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
+5.  Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 2. Executando com Docker
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Pré-requisitos:**
+* Docker Desktop instalado e em execução.
 
-### `npm run eject`
+**Passos:**
+1.  Clone o repositório (se ainda não o fez).
+2.  Navegue até a pasta do projeto.
+3.  Construa a imagem Docker:
+    ```bash
+    docker build -t desaparecidos-mt .
+    ```
+4.  Execute o container a partir da imagem:
+    ```bash
+    docker run -p 8080:80 desaparecidos-mt
+    ```
+5.  Abra [http://localhost:8080](http://localhost:8080) no seu navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
